@@ -1,0 +1,386 @@
+/* Video Container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 20px 0; /* Sesuaikan jarak sesuai kebutuhan */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.paket-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paket-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.paket-item h4 {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+.paket-item p {
+  margin: 10px 0;
+}
+
+.detail-paket {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.detail-paket ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-paket li {
+  margin: 5px 0;
+}
+
+.tombol {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: auto; /* This will push the button to the bottom of the container */
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.tombol:hover {
+  background-color: #0056b3;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 20px 0; /* Jarak vertikal sekitar video */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.modal-content input, 
+.modal-content select, 
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal-content button.cancel {
+  background-color: #6c757d;
+}
+
+.modal-content button:hover {
+  opacity: 0.9;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav .layar-dalam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 40px;
+}
+
+nav .menu ul {
+  display: flex;
+  list-style: none;
+}
+
+nav .menu ul li {
+  margin: 0 10px;
+}
+
+nav .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 10px;
+}
+
+nav .menu ul li a:hover {
+  background: #575757;
+  border-radius: 5px;
+}
+
+header {
+  background: url('path/to/your/header-image.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .intro h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+main h3 {
+  margin-bottom: 20px;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background: #575757;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .layar-dalam {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  margin-bottom: 10px;
+}
+
+footer div {
+  margin: 10px 0;
+}
+
+footer .copyright {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .menu ul li {
+    margin: 5px 0;
+  }
+
+  header {
+    height: 200px;
+  }
+
+  header .intro h3 {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  footer .layar-dalam {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+.intro h3 {
+  font-size: 2rem; /* Larger font size */
+  margin: 0; /* Remove default margin */
+}
+/* Style for the section containing the form */
+#booking-form {
+  padding: 20px; /* Optional padding inside the section */
+}
+
+#booking-form .layar-dalam {
+  margin-top: -300px; /* Move the section upwards */
+  padding: 20px; /* Optional padding inside the .layar-dalam */
+}
+
+form {
+  background-color: #f9f9f9; /* Light background color for form */
+  padding: 20px; /* Padding inside the form */
+  border-radius: 5px; /* Rounded corners for the form */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+form label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px; /* Margin below the label */
+}
+
+form input, form select {
+  width: 100%; /* Make inputs and select elements full width */
+  padding: 10px; /* Padding inside inputs and select */
+  margin-bottom: 10px; /* Margin below inputs and select */
+  border: 1px solid #ccc; /* Border around inputs and select */
+  border-radius: 4px; /* Rounded corners for inputs and select */
+}
+
+form input[type="submit"] {
+  background-color: #009688; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 16px; /* Font size for button text */
+}
+
+form input[type="submit"]:hover {
+  background-color: #00796b; /* Darker button color on hover */
+}
+
+/* Style for gender options */
+.gender-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust space between options */
+}
+
+.gender-options input[type="radio"] {
+  margin-left: 10px; /* Space between label text and radio button */
+}

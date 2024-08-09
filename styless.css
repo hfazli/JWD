@@ -1,0 +1,81 @@
+/* General styles for the form */
+form {
+    background-color: #f9f9f9; /* Light background color for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 5px; /* Rounded corners for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form horizontally and add margin on top and bottom */
+  }
+  
+  form label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Margin below the label */
+    font-weight: bold; /* Make the labels bold */
+  }
+  
+  form input, 
+  form select, 
+  form textarea {
+    width: 100%; /* Make inputs, select, and textarea full width */
+    padding: 10px; /* Padding inside inputs, select, and textarea */
+    margin-bottom: 15px; /* Margin below inputs, select, and textarea */
+    border: 1px solid #ccc; /* Border around inputs, select, and textarea */
+    border-radius: 4px; /* Rounded corners for inputs, select, and textarea */
+  }
+  
+  form input[type="submit"] {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Font size for button text */
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+  
+  /* Style for gender options */
+  .gender-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gender-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust space between options */
+  }
+  
+  .gender-options input[type="radio"] {
+    margin-left: 10px; /* Space between label text and radio button */
+  }
+  
+  /* Style for the message area */
+  .message {
+    color: red; /* Text color for error messages */
+    font-size: 1em; /* Font size for error messages */
+    margin-bottom: 15px; /* Margin below the message area */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    form {
+      padding: 15px; /* Reduce padding on smaller screens */
+      margin: 10px; /* Adjust margin on smaller screens */
+    }
+  
+    form input, 
+    form select, 
+    form textarea {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    form input[type="submit"] {
+      font-size: 14px; /* Adjust button font size for smaller screens */
+    }
+  }
+  
